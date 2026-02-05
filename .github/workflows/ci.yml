@@ -13,5 +13,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '25'
+          
+      - name: Lancer les tests
+        run: bash ./gradlew test
       - name: Lancer les tests
         run: ./gradlew test

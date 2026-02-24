@@ -24,4 +24,4 @@
     - name: Prevent deployment if maintenance mode is enabled
       fail:
         msg: "Deployment blocked: maintenance mode enabled"
-      when: maintenance_mode | default(false)
+      when: maintenance_mode | default(true)
